@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gift</title>
+<title>A Gift For You ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b0a12, #4a0e1a, #6d0f23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, serif;
+  color: #f5e6e8;
+  padding: 30px;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.gift {
+  font-size: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gift:hover {
+  transform: scale(1.1);
+}
+
+.message {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.letter {
+  display: none;
+  margin-top: 30px;
+  background: #f8f1e7;
+  color: #3b2a23;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: left;
+  line-height: 1.9;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 1.7rem;
+}
+
+.letter h2 {
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.home {
+  display: inline-block;
+  margin-top: 30px;
+  color: #f5e6e8;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </head>
+
 <body>
-    <h1>🎁 Surprise!</h1>
 
-    <p>Your special message here.</p>
+<div class="container">
 
-    <a href="index.html">← Home</a>
+  <div class="gift" onclick="openGift()">
+    🎁
+  </div>
+
+  <div class="message">
+    Click to open your gift
+  </div>
+
+  <div class="letter fade-in" id="letter">
+
+    <h2>My Gorgeous Precious Bean,</h2>
+
+    <p>
+      Thank you for being patient with me.
+      Thank you for staying beside me.
+    </p>
+
+    <p>
+      You make my life filled with laughter,
+      and you make me feel things I didn't before.
+    </p>
+
+    <p>
+      Looking back on this year, there isn't a single thing I would change
+      because every moment led me to us.
+      <em>(Mostly lol.)</em>
+    </p>
+
+    <p>
+      Thank you for all the moments,
+      the happy times and the ordinary times.
+      I love every second with you.
+    </p>
+
+    <p>
+      I know that I love you more than anything,
+      and I hope to be with you for a very, very long time.
+    </p>
+
+    <p>
+      Happy Anniversary, my love ❤️
+    </p>
+
+    <p>
+      Your perfect bwean,<br>
+      Mone
+    </p>
+
+  </div>
+
+  <a class="home" href="index.html">← Home</a>
+
+</div>
+
+<script>
+function openGift() {
+  document.getElementById("letter").style.display = "block";
+}
+</script>
+
 </body>
 </html>
